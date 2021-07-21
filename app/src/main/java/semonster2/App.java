@@ -11,7 +11,7 @@ public class App {
   final static int maxRandomNumber = 4;
 
   public String getGreeting() {
-    return "Hello SEMonster";
+    return "こんにちは SEMonster";
   }
 
   public static void main(String[] args) {

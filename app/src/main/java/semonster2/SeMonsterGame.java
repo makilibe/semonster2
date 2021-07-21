@@ -28,7 +28,7 @@ public class SeMonsterGame {
 
   void draw(String playerName) {
     Player player = this.playerMap.get(playerName);
-    player.drawMonsters();
+    player.drawMonster();
     System.out.println(player);
   }
 }
