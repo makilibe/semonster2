@@ -3,20 +3,38 @@
  */
 package semonster2;
 
+import java.util.LinkedList;
+import java.util.Random;
+
 public class App {
+  final static Random random = new Random();
+  final static int maxRandomNumber = 4;
+
   public String getGreeting() {
-    return "こんにちは SEMonster";
+    return "Hello SEMonster";
   }
 
   public static void main(String[] args) {
     System.out.println(new App().getGreeting());
-    Monster monster1 = new Monster(0, 3);
-    System.out.println(monster1.toString());
-    Monster monster2 = new Monster(1, 2);
-    System.out.println(monster2.toString());
-    Monster monster3 = new Monster(2, 1);
-    System.out.println(monster3.toString());
-    Monster monster4 = new Monster(3, 0);
-    System.out.println(monster4.toString());
+    SeMonsterGame mf = new SeMonsterGame(createRandomList(10));
+    mf.addPlayer("user");
+    mf.draw("user");
+
   }
+
+  /**
+   *
+   *
+   * @param randNum
+   * @return
+   */
+  public static LinkedList<Integer> createRandomList(int count) {
+    LinkedList<Integer> randNumList = new LinkedList<>();
+    for (int i = 0; i < count; i++) {
+      randNumList.add(random.nextInt(maxRandomNumber + 1));
+    }
+
+    return randNumList;
+  }
+
 }
