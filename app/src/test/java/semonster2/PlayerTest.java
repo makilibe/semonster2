@@ -31,7 +31,6 @@ public class PlayerTest {
       + "Skeleton:レア度[0]\n"
       + "Cleeper:レア度[0]\n"
       + "Enderman:レア度[0]\n"
-      + "Blaze:レア度[0]\n"
       + "Zombie:レア度[1]\n";
 
     Assert.assertEquals(expectedString, player.toString());
