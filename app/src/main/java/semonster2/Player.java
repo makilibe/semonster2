@@ -9,7 +9,7 @@ import org.w3c.dom.NameList;
 public class Player {
   String name;
   ArrayList<Monster> monsterDeck = new ArrayList<>();
-  LinkedList<Integer> randomNumberList; // random 0 to 4
+  LinkedList<Integer> randomNumberList; // random 0 to 3
 
   Player(LinkedList<Integer> randomNumberList, String playerName){
     this.randomNumberList = randomNumberList;
