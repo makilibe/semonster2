@@ -18,7 +18,7 @@ public class Player {
 
   public void drawMonster() {
 
-    for (int i = 0; i < 4; i++) {
+    for (int i = 0; i < 5; i++) {
       this.monsterDeck.add(new Monster(this.randomNumberList.pop(), this.randomNumberList.pop()));
     }
   }
