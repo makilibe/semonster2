@@ -11,13 +11,7 @@ public class Monster {
   }
 
   String summonMonster(int mNumber) {
-<<<<<<< HEAD
     String monster[] = {"Zombie", "Skelton", "Cleeper", "Enderman"};
-=======
-
-    String monster[] = {"Zombie", "Skelton", "Cleeper", "Enderman"};
-
->>>>>>> 278dc43874e08303789086f0fd7006a1689735bd
     return monster[mNumber];
   }
 
