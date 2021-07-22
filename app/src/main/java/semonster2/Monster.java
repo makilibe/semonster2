@@ -12,7 +12,7 @@ public class Monster {
 
   String summonMonster(int mNumber) {
 
-    String monster[] = {"Zombie", "Skelton", "Cleeper", "Enderman", "Blaze"};
+    String monster[] = {"Zombie", "Skelton", "Cleeper", "Enderman",};
 
     return monster[mNumber];
   }
