@@ -8,7 +8,7 @@ import java.util.Random;
 
 public class App {
   final static Random random = new Random();
-  final static int maxRandomNumber = 4;
+  final static int maxRandomNumber = 3;
 
   public String getGreeting() {
     return "こんにちは SEMonster";
